@@ -1,5 +1,5 @@
 import React from "react";
-import CopyToClipboard from "react-copy-to-clipboard";
+import { useCopyToClipboard } from "@uidotdev/usehooks";
 import { base_url } from "../../App";
 import { HomeOutlined, LinkOutlined, RedoOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
@@ -17,7 +17,7 @@ const ResultButtonGroup = ({ testParam, resultParam }) => {
   return (
     <div className={style.mainDiv}>
       <div className={style.upperDiv}>
-        <CopyToClipboard
+        <useCopyToClipboard
           text={`${base_url}/${testParam}/result/${resultParam}`}
         >
           <button
@@ -29,7 +29,7 @@ const ResultButtonGroup = ({ testParam, resultParam }) => {
             <LinkOutlined />
             &nbsp;링크 복사
           </button>
-        </CopyToClipboard>
+        </useCopyToClipboard>
         <button className={style.upperButton} onClick={onClickRedoButton}>
           <RedoOutlined /> &nbsp;다시 하기
         </button>
