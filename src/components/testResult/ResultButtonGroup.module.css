@@ -1,0 +1,32 @@
+.mainDiv {
+  width: 100%;
+  margin: 1.5rem auto;
+}
+
+.upperButton,
+.bottomButton {
+  height: 3.5rem;
+  width: 40%;
+  margin: 0 5%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: solid 2px red;
+  background-color: #f0f0f0;
+  color: red;
+}
+
+.bottomButton {
+  width: 90%;
+  margin: 1rem;
+}
+
+.upperButton:hover {
+  background-color: red;
+  color: white;
+}
+.bottomButton:hover {
+  background-color: red;
+  color: white;
+}

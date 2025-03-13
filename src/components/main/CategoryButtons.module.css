@@ -1,0 +1,16 @@
+.categoryButton {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000;
+  margin: 1rem;
+  background-color: #fff;
+  color: red;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.categoryButton:hover {
+  background-color: red;
+  color: #fff;
+}
