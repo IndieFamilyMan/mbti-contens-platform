@@ -4,7 +4,7 @@ import { TwitterShareButton } from "react-share";
 import { XIcon } from "react-share";
 import { base_url } from "../../App";
 import styles from "./ShareButtonGroup.module.css";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import { useCopyToClipboard } from "@uidotdev/usehooks";
 
 const ShareButtonGroup = ({ testParam, resultParam, renderTestInfo }) => {
   return (
@@ -25,7 +25,7 @@ const ShareButtonGroup = ({ testParam, resultParam, renderTestInfo }) => {
           <XIcon size={48} round className={styles.socialMediaIcon} />
         </TwitterShareButton>
 
-        <CopyToClipboard
+        <useCopyToClipboard
           text={`${base_url}/${testParam}/result/${resultParam}`}
         >
           <button
@@ -36,7 +36,7 @@ const ShareButtonGroup = ({ testParam, resultParam, renderTestInfo }) => {
           >
             URL
           </button>
-        </CopyToClipboard>
+        </useCopyToClipboard>
       </div>
     </div>
   );
