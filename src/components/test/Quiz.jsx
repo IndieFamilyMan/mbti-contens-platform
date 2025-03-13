@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import style from "./Quiz.module.css";
+import style from "./quiz.module.css";
 import { Progress } from "antd";
 import { arrayShuffler } from "../../tools/tools";
 
