@@ -36,10 +36,7 @@ function ThumbnailList() {
       {/* base_url/:testName 형식으로 넘어가기  템플릿 리터럴 형태로 넘김*/}
 
       {testlist?.map((test) => (
-        <Link
-          to={`${base_url}/${test?.info?.mainUrl}`}
-          key={test?.info?.mainUrl}
-        >
+        <Link to={`/${test?.info?.mainUrl}`} key={test?.info?.mainUrl}>
           {" "}
           {/* ($=백틱 이라고함, {} = curly bracket)템플릿 리터럴 형태로 넘김*/}
           <img
