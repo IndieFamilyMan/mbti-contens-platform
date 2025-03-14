@@ -2,10 +2,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./page/Main";
 import Test from "./page/Test";
 import TestResult from "./page/TestResult";
-
-export const base_url = "http://localhost:5173";
+import ReactGA4 from "react-ga4";
+export const base_url = "https://ezlivingtips.com/";
 
 function App() {
+  useEffect(() => {
+    ReactGA4.initialize([
+      {
+        trackingId: "G-51XJWKYPFB",
+        gaOptions: {
+          siteSpeedSampleRate: 100,
+        },
+      },
+    ]);
+  }, []);
   return (
     <BrowserRouter>
       <Routes>
