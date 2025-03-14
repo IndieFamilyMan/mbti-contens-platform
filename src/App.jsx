@@ -4,6 +4,7 @@ import Test from "./page/Test";
 import TestResult from "./page/TestResult";
 import ReactGA4 from "react-ga4";
 export const base_url = "https://ezlivingtips.com/";
+import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
